@@ -1,455 +1,582 @@
-@font-face {
-    font-family: 'SegoeWPLight';
-    src: url('../fonts/SegoeWPLight.eot');
-    src: url('../fonts/SegoeWPLight.eot') format('embedded-opentype'),
-    url('../fonts/SegoeWPLight.woff2') format('woff2'),
-    url('../fonts/SegoeWPLight.woff') format('woff'),
-    url('../fonts/SegoeWPLight.ttf') format('truetype'),
-    url('../fonts/SegoeWPLight.svg#SegoeWPLight') format('svg');
+@import url(https://fonts.googleapis.com/css?family=Open+Sans);
+@import url(https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300);
+/* line 5, C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  font-size: 100%;
+  vertical-align: baseline;
 }
 
-@font-face {
-    font-family: 'segoe_wp_regular';
-    src: url('../fonts/segoe_wp_regular.eot');
-    src: url('../fonts/segoe_wp_regular.eot') format('embedded-opentype'),
-    url('../fonts/segoe_wp_regular.woff2') format('woff2'),
-    url('../fonts/segoe_wp_regular.woff') format('woff'),
-    url('../fonts/segoe_wp_regular.ttf') format('truetype'),
-    url('../fonts/segoe_wp_regular.svg#segoe_wp_regular') format('svg');
+/* line 22, C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+html {
+  line-height: 1;
 }
 
+/* line 24, C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+ol, ul {
+  list-style: none;
+}
+
+/* line 26, C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* line 28, C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+caption, th, td {
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle;
+}
+
+/* line 30, C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+q, blockquote {
+  quotes: none;
+}
+/* line 103, C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+q:before, q:after, blockquote:before, blockquote:after {
+  content: "";
+  content: none;
+}
+
+/* line 32, C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+a img {
+  border: none;
+}
+
+/* line 116, C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
+  display: block;
+}
+
+/* line 8, ../sass/all.scss */
 body {
-    margin: 0 auto;
-    color: #909090;
-    background: #fff;
-    font: 15.35px/17.35px 'segoe_wp_regular';
+  margin: 0 auto;
+  color: #909090;
+  background: #fff;
+  font: 15.35px/17.35px 'segoe_wp_regular';
 }
 
 /* General reset */
+/* line 17, ../sass/all.scss */
 form, fieldset {
-    margin: 0;
-    padding: 0;
-    border-style: none;
+  margin: 0;
+  padding: 0;
+  border-style: none;
 }
 
+/* line 23, ../sass/all.scss */
 img {
-    display: block;
-    border-style: none;
+  display: block;
+  border-style: none;
 }
 
+/* line 28, ../sass/all.scss */
 input, select, textarea {
-    vertical-align: middle;
-    font: 100% arial, helvetica, sans-serif;
+  vertical-align: middle;
+  font: 100% arial, helvetica, sans-serif;
 }
 
+/* line 33, ../sass/all.scss */
 a {
-    color: #f00;
-    text-decoration: none;
+  color: #f00;
+  text-decoration: none;
 }
-
+/* line 36, ../sass/all.scss */
 a:hover {
-    text-decoration: underline;
+  text-decoration: underline;
 }
 
 /* General settings */
+/* line 43, ../sass/all.scss */
 header {
-    padding: 22px 0 0 0;
-    max-width: 1070px;
-    margin: 0 auto;
+  padding: 22px 0 0 0;
+  max-width: 1070px;
+  margin: 0 auto;
 }
-
+/* line 47, ../sass/all.scss */
 header a.logo {
-    font-family: 'SegoeWPLight';
-    color: #000;
-    font-size: 42.35px;
-    line-height: 44.35px;
-    background: url(../img/logo.png) 0 9px no-repeat;
-    background-size: 44px 44px;
-    padding: 0 0 0 57px;
-    margin: 24px 0 0 4.67%;
+  font-family: "Open Sans Condensed", sans-serif;
+  color: #000;
+  font-size: 42.35px;
+  line-height: 44.35px;
+  background: url(../img/logo.png) 0 9px no-repeat;
+  background-size: 44px 44px;
+  padding: 0 0 0 57px;
+  margin: 24px 0 0 4.67%;
 }
-
+/* line 56, ../sass/all.scss */
 header a.logo:hover {
-    text-decoration: none;
+  text-decoration: none;
 }
-
+/* line 60, ../sass/all.scss */
 header nav {
-    padding: 25px 1.5% 19px 0;
-    float: right;
+  padding: 25px 1.5% 19px 0;
+  float: right;
 }
-
+/* line 63, ../sass/all.scss */
 header nav a {
-    margin: 0 35px 0 0;
-    padding: 0 0 15px 0;
-    font-size: 20.35px;
-    line-height: 22.35px;
-    color: #6c6c6c;
+  margin: 0 35px 0 0;
+  padding: 0 0 15px 0;
+  font-size: 20.35px;
+  line-height: 22.35px;
+  color: #6c6c6c;
+}
+/* line 69, ../sass/all.scss */
+header nav a:hover, header nav a.active {
+  border-bottom: 3px solid #5094f2;
+  text-decoration: none;
 }
 
-header nav a:hover,
-header nav a.active {
-    border-bottom: 3px solid #5094f2;
-    text-decoration: none;
-}
-
+/* line 77, ../sass/all.scss */
 #responsive-menu-button {
-    margin: 8px 9px 0 0;
-    display: none;
-    background: url(../img/menu.png) no-repeat;
-    width: 58px;
-    height: 44px;
-    float: right;
+  margin: 8px 9px 0 0;
+  display: none;
+  background: url(../img/menu.png) no-repeat;
+  width: 58px;
+  height: 44px;
+  float: right;
 }
 
+/* line 86, ../sass/all.scss */
 #sidr-main {
-    width: 250px;
-    height: 250px;
-    position: fixed;
-    background: #fff;
-    top: 0;
-    display: none;
+  width: 250px;
+  height: 250px;
+  position: fixed;
+  background: #fff;
+  top: 0;
+  display: none;
 }
 
+/* line 95, ../sass/all.scss */
 .sidr-inner a {
-    margin: 25px 0 0 0;
-    display: block;
-    color: #6c6c6c;
-    font-size: 20px;
-    line-height: 22px;
-    text-align: center;
+  margin: 25px 0 0 0;
+  display: block;
+  color: #6c6c6c;
+  font-size: 20px;
+  line-height: 22px;
+  text-align: center;
 }
 
+/* line 104, ../sass/all.scss */
 .gall {
-    width: 100%;
-    overflow: hidden;
-    margin: 0 auto;
-    background: url(../img/background.png);
-    background-size: 100% 100%;
+  width: 100%;
+  overflow: hidden;
+  margin: 0 auto;
+  background: url(../img/background.png);
+  background-size: 100% 100%;
 }
 
+/* line 112, ../sass/all.scss */
 .gallery-holder {
-    width: 100%;
-    position: relative;
-    padding: 38px 0 8px 0;
+  width: 100%;
+  position: relative;
+  padding: 38px 0 8px 0;
 }
 
+/* line 118, ../sass/all.scss */
 .list {
-    position: relative;
-    list-style: none;
-    padding: 0;
-    margin: 0 auto;
-    overflow: hidden;
-    width: 100%;
+  position: relative;
+  list-style: none;
+  padding: 0;
+  margin: 0 auto;
+  overflow: hidden;
+  width: 100%;
 }
-
+/* line 125, ../sass/all.scss */
 .list li {
-    position: absolute;
-    display: none;
-    width: 100%;
-    left: 0;
-    top: 0;
+  position: absolute;
+  display: none;
+  width: 100%;
+  left: 0;
+  top: 0;
 }
-
+/* line 131, ../sass/all.scss */
 .list li.first {
-    position: relative;
-    display: block;
-    float: left;
+  position: relative;
+  display: block;
+  float: left;
 }
-
+/* line 137, ../sass/all.scss */
 .list img {
-    padding: 0 9.6% 0 8.13%;
-    height: auto;
-    float: left;
-    width: 32.3%;
+  padding: 0 9.6% 0 8.13%;
+  height: auto;
+  float: left;
+  width: 32.3%;
 }
-
+/* line 143, ../sass/all.scss */
 .list li .lorem {
-    padding: 10.1% 0 0 0;
-    width: 37%;
-    float: left;
+  padding: 10.1% 0 0 0;
+  width: 37%;
+  float: left;
 }
-
+/* line 147, ../sass/all.scss */
 .list li .lorem h1 {
-    margin: 0 0 9px 0;
-    font-weight: normal;
-    font-family: 'SegoeWPLight';
-    font-size: 42.35px;
-    line-height: 44.35px;
-    color: #fff;
+  margin: 0 0 9px 0;
+  font-weight: normal;
+  font-family: "Open Sans Condensed", sans-serif;
+  font-size: 42.35px;
+  line-height: 44.35px;
+  color: #fff;
 }
-
+/* line 155, ../sass/all.scss */
 .list li .lorem span {
-    font-family: 'SegoeWPLight';
-    font-size: 26.35px;
-    line-height: 42.35px;
-    color: #fff;
+  font-family: "Open Sans Condensed", sans-serif;
+  font-size: 26.35px;
+  line-height: 42.35px;
+  color: #fff;
 }
-
+/* line 161, ../sass/all.scss */
 .list li .lorem a {
-    margin: 32px 0 20px 12px;
-    font-family: 'SegoeWPLight';
-    font-size: 22.35px;
-    line-height: 30px;
-    color: #fff;
-    display: block;
-    width: 128px;
-    border-radius: 2px;
-    padding: 3px 0 8px 44px;
-    background: url(../img/ok.png) 11px 50% no-repeat #5094f2;
-    background-size: 23px 23px;
+  margin: 32px 0 20px 12px;
+  font-family: "Open Sans Condensed", sans-serif;
+  font-size: 22.35px;
+  line-height: 30px;
+  color: #fff;
+  display: block;
+  width: 128px;
+  border-radius: 2px;
+  padding: 3px 0 8px 44px;
+  background: url(../img/ok.png) 11px 50% no-repeat #5094f2;
+  background-size: 23px 23px;
 }
 
-.prev,
+/* line 177, ../sass/all.scss */
+.prev {
+  width: 25px;
+  height: 63px;
+  display: block;
+  text-indent: -3000px;
+  position: absolute;
+  top: 54%;
+  left: 10%;
+  margin-top: -31px;
+  z-index: 10;
+  background: url(../img/arrow.png) no-repeat;
+}
+
+/* line 190, ../sass/all.scss */
 .next {
-    width: 25px;
-    height: 63px;
-    display: block;
-    text-indent: -3000px;
-    position: absolute;
-    top: 54%;
-    left: 10%;
-    margin-top: -31px;
-    z-index: 10;
-    background: url(../img/arrow.png) no-repeat;
+  width: 25px;
+  height: 63px;
+  display: block;
+  text-indent: -3000px;
+  position: absolute;
+  top: 54%;
+  margin-top: -31px;
+  z-index: 10;
+  background: url(../img/arrow.png) no-repeat;
+  transform: scale(-1, 1);
+  right: 10%;
+  left: auto;
 }
 
-.next {
-    background: url(../img/arrow.png) no-repeat;
-    transform: scale(-1, 1);
-    right: 10%;
-    left: auto;
-}
-
+/* line 205, ../sass/all.scss */
 .content {
-    overflow: hidden;
-    width: 100%;
-    margin: -8px auto 0;
-    padding: 72px 0 0 0;
-    background: url(../img/main_bg.png) repeat-x;
+  overflow: hidden;
+  width: 100%;
+  margin: -8px auto 0;
+  padding: 72px 0 0 0;
+  background: url(../img/main_bg.png) repeat-x;
 }
 
+/* line 213, ../sass/all.scss */
 .pic {
-    max-width: 1070px;
-    margin: 0 auto;
-    overflow: hidden;
+  max-width: 1070px;
+  margin: 0 auto;
+  overflow: hidden;
 }
 
+/* line 219, ../sass/all.scss */
 .circle {
-    text-align: center;
-    width: 33.3%;
-    float: left;
+  text-align: center;
+  width: 33.3%;
+  float: left;
 }
-
+/* line 223, ../sass/all.scss */
 .circle img {
-    margin: 0 auto 24px;
+  margin: 0 auto 24px;
 }
 
+/* line 229, ../sass/all.scss */
 .txt span {
-    text-align: center;
-    font-family: 'segoe_wp_regular';
-    font-size: 20.35px;
-    line-height: 22.35px;
-    color: #5094f2;
+  text-align: center;
+  font-family: "Open Sans", sans-serif;
+  font-size: 20.35px;
+  line-height: 22.35px;
+  color: #5094f2;
 }
-
+/* line 236, ../sass/all.scss */
 .txt p {
-    margin: 0;
-    font-size: 14.35px;
-    line-height: 24.35px;
-    font-family: 'segoe_wp_regular';
+  margin: 0;
+  font-size: 14.35px;
+  line-height: 24.35px;
+  font-family: "Open Sans", sans-serif;
 }
 
+/* line 244, ../sass/all.scss */
 .card {
-    padding: 78px 0 0 0;
-    float: left;
-    width: 50%;
-    overflow: hidden;
+  padding: 78px 0 0 0;
+  float: left;
+  width: 50%;
+  overflow: hidden;
 }
-
+/* line 249, ../sass/all.scss */
 .card h2 {
-    font-family: 'segoe_wp_regular';
-    font-size: 42.35px;
-    line-height: 44.35px;
-    color: #6f7173;
-    margin: 0 0 0 14.1%;
-    font-weight: normal;
+  font-family: "Open Sans", sans-serif;
+  font-size: 42.35px;
+  line-height: 44.35px;
+  color: #6f7173;
+  margin: 0 0 0 14.1%;
+  font-weight: normal;
 }
-
+/* line 257, ../sass/all.scss */
 .card img {
-    margin: 37px auto;
-    width: 70%;
-    height: auto;
+  margin: 37px auto;
+  width: 70%;
+  height: auto;
 }
-
+/* line 262, ../sass/all.scss */
 .card h3 {
-    font-family: 'segoe_wp_regular';
-    font-size: 26.35px;
-    line-height: 28.35px;
-    color: #6f7173;
-    margin: 58px 0 19px 0;
-    font-weight: normal;
+  font-family: "Open Sans", sans-serif;
+  font-size: 26.35px;
+  line-height: 28.35px;
+  color: #6f7173;
+  margin: 58px 0 19px 0;
+  font-weight: normal;
 }
-
+/* line 270, ../sass/all.scss */
 .card ul {
-    margin: 0;
-    padding: 0;
-    list-style: none;
+  margin: 0;
+  padding: 0;
+  list-style: none;
 }
-
+/* line 274, ../sass/all.scss */
 .card ul li {
-    line-height: 36.35px;
+  line-height: 36.35px;
 }
 
+/* line 280, ../sass/all.scss */
 footer {
-    width: 100%;
-    margin: 11px auto 0;
-    padding: 28px 0 44px 0;
-    text-align: center;
-    border-top: 1px solid #e5e5e5;
+  width: 100%;
+  margin: 11px auto 0;
+  padding: 28px 0 44px 0;
+  text-align: center;
+  border-top: 1px solid #e5e5e5;
 }
-
+/* line 286, ../sass/all.scss */
 footer a {
-    color: #909090;
+  color: #909090;
 }
 
 @media screen and (max-width: 640px) {
-    header {
-        padding: 19px 0;
-    }
+  /* line 292, ../sass/all.scss */
+  header {
+    padding: 19px 0;
+  }
+  /* line 294, ../sass/all.scss */
+  header a.logo {
+    font-size: 49.44px;
+    line-height: 51.44px;
+    background-size: 52px 52px;
+    padding: 0 0 0 67px;
+    margin: 24px 0 0 4.67%;
+  }
 
-    header a.logo {
-        font-size: 49.44px;
-        line-height: 51.44px;
-        background-size: 52px 52px;
-        padding: 0 0 0 67px;
-        margin: 24px 0 0 4.67%;
-    }
+  /* line 302, ../sass/all.scss */
+  .gallery-holder {
+    padding: 21px 0 3px 0;
+  }
 
-    .gallery-holder {
-        padding: 21px 0 3px 0;
-    }
+  /* line 306, ../sass/all.scss */
+  .list img {
+    padding: 0 10.4% 0 6.13%;
+    width: 28.3%;
+  }
+  /* line 310, ../sass/all.scss */
+  .list li .lorem {
+    padding: 0;
+    width: 47%;
+  }
+  /* line 313, ../sass/all.scss */
+  .list li .lorem h1 {
+    margin: 3px 0 5px 0;
+    font-size: 30.98px;
+    line-height: 32.98px;
+  }
+  /* line 318, ../sass/all.scss */
+  .list li .lorem span {
+    font-size: 22.71px;
+    line-height: 36.71px;
+  }
+  /* line 322, ../sass/all.scss */
+  .list li .lorem a {
+    margin: 30px 0 20px 0;
+    font-size: 31.08px;
+    line-height: 45px;
+    width: 175px;
+    border-radius: 0;
+    padding: 0 0 8px 60px;
+    background: url(../img/ok.png) 15px 50% no-repeat #5094f2;
+    background-size: 32px 32px;
+  }
 
-    .list img {
-        padding: 0 10.4% 0 6.13%;
-        width: 28.3%;
-    }
+  /* line 334, ../sass/all.scss */
+  .prev, .next, nav {
+    display: none;
+  }
 
-    .list li .lorem {
-        padding: 0;
-        width: 47%;
-    }
+  /* line 337, ../sass/all.scss */
+  #responsive-menu-button {
+    display: block;
+  }
 
-    .list li .lorem h1 {
-        margin: 3px 0 5px 0;
-        font-size: 30.98px;
-        line-height: 32.98px;
-    }
+  /* line 340, ../sass/all.scss */
+  .content {
+    margin: 0 auto;
+    padding: 0 0 0 0;
+    background: none;
+  }
 
-    .list li .lorem span {
-        font-size: 22.71px;
-        line-height: 36.71px;
-    }
+  /* line 345, ../sass/all.scss */
+  .pic {
+    max-width: 640px;
+  }
 
-    .list li .lorem a {
-        margin: 30px 0 20px 0;
-        font-size: 31.08px;
-        line-height: 45px;
-        width: 175px;
-        border-radius: 0;
-        padding: 0 0 8px 60px;
-        background: url(../img/ok.png) 15px 50% no-repeat #5094f2;
-        background-size: 32px 32px;
-    }
+  /* line 348, ../sass/all.scss */
+  .circle {
+    text-align: left;
+    width: 100%;
+    float: left;
+    border-bottom: 1px solid #ccc;
+    padding: 38px 0 0 6.72%;
+  }
+  /* line 354, ../sass/all.scss */
+  .circle img {
+    width: 138px;
+    height: auto;
+    float: left;
+    margin: 0 3.6% 17px 0;
+  }
 
-    .prev,
-    .next {
-        display: none;
-    }
+  /* line 361, ../sass/all.scss */
+  .txt {
+    padding: 22px 0 0 0;
+  }
+  /* line 363, ../sass/all.scss */
+  .txt span {
+    text-align: center;
+    font-size: 34.13px;
+    line-height: 36.13px;
+  }
+  /* line 368, ../sass/all.scss */
+  .txt p {
+    margin: 7px 0 0 0;
+    font-size: 19.35px;
+    line-height: 21.35px;
+  }
 
-    nav {
-        display: none;
-    }
+  /* line 374, ../sass/all.scss */
+  .card {
+    text-align: center;
+    padding: 0;
+    width: 100%;
+  }
+  /* line 378, ../sass/all.scss */
+  .card:last-child {
+    padding: 0 0 0 11.77%;
+    text-align: left;
+  }
+  /* line 382, ../sass/all.scss */
+  .card h2 {
+    margin: 32px 0 0 0;
+  }
+  /* line 385, ../sass/all.scss */
+  .card img {
+    margin: 41px auto 0;
+    width: 35%;
+  }
+  /* line 389, ../sass/all.scss */
+  .card h3 {
+    font-size: 34.35px;
+    line-height: 36.35px;
+    margin: 12px 0 21px 0;
+  }
+  /* line 394, ../sass/all.scss */
+  .card ul {
+    padding: 0 0 0 4px;
+  }
+  /* line 396, ../sass/all.scss */
+  .card ul li {
+    font-size: 17.35px;
+  }
 
-    #responsive-menu-button {
-        display: block;
-    }
+  /* line 401, ../sass/all.scss */
+  footer {
+    margin: 39px auto 0;
+  }
+}
+@media screen and (max-width: 320px) {
+  /* line 408, ../sass/all.scss */
+  .list img {
+    padding: 0;
+    width: 100%;
+  }
+  /* line 412, ../sass/all.scss */
+  .list li .lorem {
+    padding: 0;
+    width: 100%;
+    text-align: center;
+  }
+  /* line 416, ../sass/all.scss */
+  .list li .lorem h1 {
+    margin: 0;
+  }
+  /* line 419, ../sass/all.scss */
+  .list li .lorem a {
+    margin: 10px auto;
+  }
 
-    .content {
-        margin: 0 auto;
-        padding: 0 0 0 0;
-        background: none;
-    }
+  /* line 424, ../sass/all.scss */
+  .circle {
+    text-align: center;
+    padding: 30px 0;
+  }
+  /* line 427, ../sass/all.scss */
+  .circle img {
+    width: auto;
+    float: none;
+    margin: 0 auto;
+  }
 
-    .pic {
-        max-width: 640px;
-    }
-
-    .circle {
-        text-align: left;
-        width: 100%;
-        float: left;
-        border-bottom: 1px solid #ccc;
-        padding: 38px 0 0 6.72%;
-    }
-
-    .circle img {
-        width: 138px;
-        height: auto;
-        float: left;
-        margin: 0 3.6% 17px 0;
-    }
-
-    .txt {
-        padding: 22px 0 0 0;
-    }
-
-    .txt span {
-        text-align: center;
-        font-size: 34.13px;
-        line-height: 36.13px;
-    }
-
-    .txt p {
-        margin: 7px 0 0 0;
-        font-size: 19.35px;
-        line-height: 21.35px;
-    }
-
-    .card {
-        text-align: center;
-        padding: 0;
-        width: 100%;
-    }
-
-    .card:last-child {
-        padding: 0 0 0 11.77%;
-        text-align: left;
-    }
-
-    .card h2 {
-        margin: 32px 0 0 0;
-    }
-
-    .card img {
-        margin: 41px auto 0;
-        width: 35%;
-    }
-
-    .card h3 {
-        font-size: 34.35px;
-        line-height: 36.35px;
-        margin: 12px 0 21px 0;
-    }
-
-    .card ul {
-        padding: 0 0 0 4px;
-    }
-
-    .card ul li {
-        font-size: 17.35px;
-    }
-
-    footer {
-        margin: 39px auto 0;
-    }
+  /* line 434, ../sass/all.scss */
+  .card:last-child {
+    padding: 0;
+  }
+  /* line 437, ../sass/all.scss */
+  .card img {
+    width: 100%;
+  }
+  /* line 440, ../sass/all.scss */
+  .card h3 {
+    text-align: center;
+    font-size: 27.35px;
+    line-height: 28.35px;
+  }
 }
